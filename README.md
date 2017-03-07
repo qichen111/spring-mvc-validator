@@ -2,12 +2,7 @@
 ## 教程
 
 1、添加spring-mvc拦截器
-<mvc:interceptors>
-		<mvc:interceptor>
-			<mvc:mapping path="/*/*" />
-			<bean class="com.dqc.trydaima.web.interceptor.AnnotationInterceptor" />
-		</mvc:interceptor>
-	</mvc:interceptors>
+### 在spring配置文件里添加拦截器
 2、编写自己的验证器类（如）
 public class RegisterValidator extends Validator {
 
