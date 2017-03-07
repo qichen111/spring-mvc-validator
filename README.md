@@ -3,12 +3,11 @@
 
 1、添加spring-mvc拦截器
 <mvc:interceptors>
-  <mvc:interceptor>
-    <mvc:mapping path="/*/*" />
-    <bean class="com.dqc.trydaima.web.interceptor.AnnotationInterceptor" />
-  </mvc:interceptor>
-</mvc:interceptors>
-
+		<mvc:interceptor>
+			<mvc:mapping path="/*/*" />
+			<bean class="com.dqc.trydaima.web.interceptor.AnnotationInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
 2、编写自己的验证器类（如）
 public class RegisterValidator extends Validator {
 
